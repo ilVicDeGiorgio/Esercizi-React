@@ -24,7 +24,7 @@ function App() {
         se poi diamo al nostro props un valore diverso, verrà renderizzato il valore che 
         abbiamo dato noi e non quello di default. */}
 
-        <Welcome name={"Francesco"} age={27}></Welcome>
+        <Welcome name={"Jhon"} age={27}></Welcome>
       </div>
     </>
   )

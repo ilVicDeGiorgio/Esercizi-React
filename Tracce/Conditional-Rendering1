@@ -1,0 +1,7 @@
+Modifica il componente Welcome in modo che il componente Age venga renderizzato 5 volte.
+Ogni volta utilizza il rendering condizionale con una delle seguenti condizioni:
+
+- Il componente Age viene renderizzato solo se la prop age è maggiore di 18.
+- Il componente Age viene renderizzato solo se la prop age è presente.
+- Il componente Age viene renderizzato solo se la prop age è maggiore di 18 e minore di 65.
+- Il componente Age viene renderizzato solo se la prop age è maggiore di 18, minore di 65 e la prop name è uguale a "John".

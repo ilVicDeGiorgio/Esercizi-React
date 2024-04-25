@@ -1,2 +1,3 @@
-Modifica il componente Welcome in modo che riceva una seconda prop chiamata age e la renderizzi sotto il messaggio di benvenuto, all'interno di un tag p dopo il messaggio "La tua età è ".
+Modifica il componente Welcome in modo che riceva una seconda prop chiamata age e la 
+renderizzi sotto il messaggio di benvenuto, all'interno di un tag p dopo il messaggio "La tua età è ".
 Modifica il valore passato alla prop name in modo che sia contenuto all'interno di un tag strong.

@@ -1,0 +1,3 @@
+Estrai il messaggio "La tua età è " in un nuovo componente chiamato Age e renderizzalo 
+all'interno del componente Welcome.
+Passa al componente Age la prop age che il componente Welcome riceve dal componente App.

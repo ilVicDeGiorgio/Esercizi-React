@@ -1,5 +1,6 @@
 import Hello from './Hello'
 import Message from './assets/Message'
+import Welcome from './Welcome'
 
 function App() {
 
@@ -15,7 +16,8 @@ function App() {
         <Message></Message>
         { /* Risposta Components3: Si posso utilizzare il componente Message direttamente
         qui e se lo faccio funziona esattamente come nell'altro caso. */}
-
+        <Welcome name={"Vittorio"}></Welcome>
+        <Welcome></Welcome>
       </div>
     </>
   )

@@ -1,0 +1,5 @@
+Crea un componente di funzione chiamato Welcome che riceve una prop name e renderizza 
+il messaggio Benvenuto, {name}! all'interno di un tag p.
+Renderizza questo componente nel tuo componente App, passandogli una prop name a tua scelta.
+Cosa succede se nessuna prop name viene passata al componente Welcome? 
+Puoi impostare un valore predefinito per la prop name?

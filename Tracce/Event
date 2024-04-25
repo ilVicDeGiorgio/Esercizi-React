@@ -1,0 +1,8 @@
+Crea un componente di funzione chiamato AlertClock che renderizza un pulsante. 
+Quando viene cliccato il pulsante, dovrebbe essere mostrato un alert con l'ora corrente.
+Renderizza il componente AlertClock all'interno del componente App. Fai in modo che il gestore 
+degli eventi venga ricevuto come prop dal componente AlertClock, invece di essere implementato 
+all'interno del componente stesso. 
+
+Suggerimento:
+Utilizza l'oggetto Date per ottenere l'ora corrente.

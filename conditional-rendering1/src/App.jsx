@@ -1,13 +1,13 @@
 // import Hello from './Hello'
 // import Message from './assets/Message'
 // import Welcome from './Welcome'
-import Age from "./Age"
+// import Age from "./Age"
+import AlertClock from "./AlertClock"
 
 function App() {
-
   return (
     <>
-      <Age age={20}></Age>
+      <AlertClock handleClick={() => alert(Date())}></AlertClock>
     </>
   )
 }

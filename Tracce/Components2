@@ -1,0 +1,3 @@
+Crea un nuovo componente Message che renderizza un tag p con il messaggio 
+"Che giornata bellissima!". Renderizza il nuovo componente all'interno del 
+componente Hello.

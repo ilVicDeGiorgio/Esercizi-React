@@ -1,6 +1,10 @@
-function Welcome({ name = "Rocco" }) {
+function Welcome({ name = "DefaultName", age }) {
     return (
-        <p>Benvenuto {name}!</p>
+        <>
+            <p>Benvenuto <strong>{name}</strong>!</p>
+            <p>La tua età è: {age}</p>
+        </>
+
     )
 }
 

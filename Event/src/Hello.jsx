@@ -1,6 +1,6 @@
 import Message from "./assets/Message"
 
-function Hello() {
+export function Hello() {
     return (
         <>
             <h2>Ciao, mondo!</h2>
@@ -10,4 +10,3 @@ function Hello() {
     )
 }
 
-export default Hello

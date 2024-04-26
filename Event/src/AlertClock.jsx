@@ -1,4 +1,4 @@
-function AlertClock({ handleClick }) {
+export function AlertClock({ handleClick }) {
     return (
         <div>
             <button onClick={handleClick}>Mostra ora corrente</button>
@@ -6,4 +6,3 @@ function AlertClock({ handleClick }) {
     )
 }
 
-export default AlertClock

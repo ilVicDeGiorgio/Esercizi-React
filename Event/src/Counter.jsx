@@ -1,8 +1,9 @@
 import { useState } from 'react'
-export default function Counter() {
-    const [counter, setCounter] = useState(0)
+
+export default function Counter({ initialValue, incrementValue }) {
+    const [counter, setCounter] = useState(initialValue)
     const handleClick = () => {
-        setCounter(counter + 1)
+        setCounter(counter + incrementValue)
     }
     return (
         <>

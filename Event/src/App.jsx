@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <AlertClock handleClick={() => alert(Date())}></AlertClock>
-      <Counter></Counter>
+      <Counter initialValue={5} incrementValue={2}></Counter>
     </>
   )
 }

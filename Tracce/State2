@@ -1,0 +1,7 @@
+Estrai il tag h2 che mostra la variabile di stato del contatore in un nuovo componente chiamato 
+CounterDisplay e renderizzalo all'interno del componente Counter, passandogli la variabile di stato 
+count come prop.
+
+Aggiungi un pulsante di decremento e un pulsante di reset al componente Counter. 
+Il pulsante di decremento dovrebbe decrementare il contatore dell'importo passato come prop, 
+e il pulsante di reset dovrebbe reimpostare il contatore al valore iniziale passato come prop.

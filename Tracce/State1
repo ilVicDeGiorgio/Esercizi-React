@@ -1,0 +1,10 @@
+Crea un componente di funzione chiamato Counter e crea una nuova variabile di stato chiamata counter 
+inizializzata a 0. Il componente Counter dovrebbe renderizzare il valore del contatore all'interno di 
+un tag h2, e il valore del contatore dovrebbe essere incrementato ogni volta che l'utente fa clic su 
+un pulsante.
+
+Suggerimento: 
+Utilizza il hook useState. Fai in modo che il valore iniziale del contatore e l'importo 
+dell'incremento vengano passati come props al componente. 
+Quando chiami la "setter" function per incrementare il contatore, il parametro dovrebbe essere 
+una funzione o un valore immediato? Perché?

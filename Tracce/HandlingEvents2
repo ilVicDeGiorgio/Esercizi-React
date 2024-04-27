@@ -1,0 +1,3 @@
+Aggiungi un'immagine all'interno del pulsante e aggiungi un gestore di eventi onClick ad essa 
+che stampi il src dell'immagine nella console. Come puoi impedire che l'attributo name del pulsante 
+venga stampato nella console quando si clicca sull'immagine?

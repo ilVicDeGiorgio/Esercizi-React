@@ -4,13 +4,13 @@
 // import Welcome from './Welcome'
 // import Age from "./Age"
 // import Counter from "./Counter"
-import Clock from "./Clock"
+// import Clock from "./Clock"
+import MouseClicker from "./MouseClicker"
 
 function App() {
   return (
     <>
-
-      <Clock></Clock>
+      <MouseClicker></MouseClicker>
     </>
   )
 }

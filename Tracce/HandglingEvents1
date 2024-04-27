@@ -1,0 +1,4 @@
+"Crea un componente MouseClicker che contiene un pulsante con un attributo di nome 
+impostato sulla stringa "one".
+Collega un gestore degli eventi al pulsante che stampa la prop name sulla console 
+quando viene cliccato leggendo la proprietà event.target.name."

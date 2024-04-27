@@ -1,7 +1,12 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import CounterDisplay from './CounterDisplay'
 function Counter({ initialValue, incrementValue }) {
     const [counter, setCounter] = useState(initialValue)
+
+    useEffect(() => {
+        console.log(`Il valore del contatore ora è: ${counter}`)
+    }, [counter])
+
     const handleClickAdd = () => {
         setCounter(counter + incrementValue)
     }
@@ -11,7 +16,7 @@ function Counter({ initialValue, incrementValue }) {
     }
 
     const handleClickReset = () => {
-        setCounter(counter === initialValue)
+        setCounter(counter == initialValue)
     }
     return (
         <>

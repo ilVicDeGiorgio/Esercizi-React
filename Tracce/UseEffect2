@@ -1,0 +1,2 @@
+Costruisci un componente Clock che renderizzi l'ora corrente all'interno di un tag h2. 
+Utilizza l'hook useEffect per aggiornare l'ora ogni secondo.

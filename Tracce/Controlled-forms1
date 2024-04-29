@@ -1,0 +1,3 @@
+Crea un componente InteractiveWelcome che renderizza un tag input e il componente Welcome. 
+Passa il contenuto corrente del tag input alla prop name del componente Welcome. Il tag input 
+dovrebbe essere un componente controllato.

@@ -5,12 +5,13 @@
 // import Age from "./Age"
 // import Counter from "./Counter"
 // import Clock from "./Clock"
-import MouseClicker from "./MouseClicker"
+// import MouseClicker from "./MouseClicker"
+import InteractiveWelcome from "./InteractiveWelcome"
 
 function App() {
   return (
     <>
-      <MouseClicker></MouseClicker>
+      <InteractiveWelcome></InteractiveWelcome>
     </>
   )
 }

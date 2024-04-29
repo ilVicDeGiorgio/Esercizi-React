@@ -2,7 +2,7 @@ import { useState } from 'react'
 import Welcome from './Welcome'
 
 function interactiveWelcome() {
-    const [name, setName] = useState('name')
+    const [name, setName] = useState('')
 
     const handleName = (e) => {
         setName(e.target.value)

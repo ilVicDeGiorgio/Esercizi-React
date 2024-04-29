@@ -3,16 +3,18 @@ import { useState } from 'react'
 function Login() {
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
-    // const [checkBox, setCheckbox] = useState(true)
+    const [isChecked, setIsChecked] = useState(false)
 
     const handleUsername = (event) => {
-        event.preventDefault()
         setUsername(event.target.value)
     }
 
     const handlePassword = (event) => {
-        event.preventDefault()
         setPassword(event.target.value)
+    }
+
+    const handleCheckbox = () => {
+        setIsChecked(!isChecked)
     }
 
     const handleSubmit = (event) => {
@@ -21,6 +23,7 @@ function Login() {
         const object = {
             username,
             password,
+            isChecked,
         }
 
         console.log(object)
@@ -35,7 +38,7 @@ function Login() {
                 <input type="password" name='password' autoComplete="new-password" onChange={handlePassword} />
 
                 <label htmlFor="checkBox">Checkbox</label>
-                <input type="checkbox" name='checkBox' />
+                <input type="checkbox" name='checkBox' onChange={handleCheckbox} />
 
                 <button type="submit">Submit</button>
             </form>

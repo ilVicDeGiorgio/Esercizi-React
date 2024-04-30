@@ -17,7 +17,7 @@ function Login() {
         setIsChecked(!isChecked)
     }
 
-    const handleSubmit = (event) => {
+    const handleLogin = (event) => {
         event.preventDefault()
 
         const userData = {
@@ -39,7 +39,7 @@ function Login() {
 
     return (
         <div>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleLogin}>
                 <label htmlFor="username">Username</label>
                 <input type="username" name='username' onChange={handleUsername} />
 
@@ -49,10 +49,10 @@ function Login() {
                 <label htmlFor="checkBox">Checkbox</label>
                 <input type="checkbox" name='checkBox' onChange={handleCheckbox} />
 
-                <button disabled={isDisabled}>Login</button>
+                <button type="submit" disabled={isDisabled}>Login</button>
                 <button onClick={handleReset}>Reset</button>
             </form>
-        </div>
+        </div >
     )
 }
 

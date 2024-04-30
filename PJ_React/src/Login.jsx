@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-function Login() {
+function Login({ onLogin }) {
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
     const [isChecked, setIsChecked] = useState(false)
@@ -19,15 +19,11 @@ function Login() {
 
     const handleSubmit = (event) => {
         event.preventDefault()
-
-        const object = {
-            username,
-            password,
-            isChecked,
-        }
-
-        console.log(object)
+        function onLogin()
     }
+
+    const isDisabled = username === '' || password === '';
+
     return (
         <div>
             <form onSubmit={handleSubmit}>
@@ -40,7 +36,7 @@ function Login() {
                 <label htmlFor="checkBox">Checkbox</label>
                 <input type="checkbox" name='checkBox' onChange={handleCheckbox} />
 
-                <button type="submit">Submit</button>
+                <button onClick={handleSubmit} disabled={isDisabled}>Login</button>
             </form>
         </div>
     )

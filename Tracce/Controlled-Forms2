@@ -1,1 +1,2 @@
-"Crea un componente Login contenente tre input: un input per l'username, un input per la password e una checkbox per il ricordo. Tutti e tre gli input dovrebbero essere componenti controllati."
+Crea un componente Login contenente tre input: un input per l'username, un input per la password 
+e una checkbox per il ricordo. Tutti e tre gli input dovrebbero essere componenti controllati.

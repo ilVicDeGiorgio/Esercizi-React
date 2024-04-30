@@ -10,9 +10,16 @@
 import Login from "./Login"
 
 function App() {
+
+  function onLogin() {
+    console.log(username, password)
+  }
+
+
+
   return (
     <>
-      <Login></Login>
+      <Login onLogin={onLogin}></Login>
     </>
   )
 }

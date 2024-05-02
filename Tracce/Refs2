@@ -1,0 +1,3 @@
+Utilizzando StrictMode, crea un componente con un effetto che stampa un messaggio solo quando 
+il componente viene montato la prima volta. Utilizza una ref per tenere traccia se il componente 
+è montato o meno.

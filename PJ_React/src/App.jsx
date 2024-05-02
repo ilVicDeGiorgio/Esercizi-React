@@ -10,13 +10,14 @@
 // import Login from "./Login"
 // import Title from "./Title"
 // import UncontrolledLogin from "./components/UncontrolledLogin"
-import FocusableInput from "./components/FocusableInput"
+// import FocusableInput from "./components/FocusableInput"
+import Mounted from "./components/Mounted"
 
 function App() {
 
   return (
     <>
-      <FocusableInput></FocusableInput>
+      <Mounted></Mounted>
     </>
   )
 }

@@ -1,0 +1,5 @@
+Implementa un componente UncontrolledLogin che implementa tutte le operazioni del componente Login, 
+ma lo fa utilizzando componenti non controllati. 
+
+Cerca di accedere ai valori del modulo utilizzando l'API del DOM leggendo l'event.target 
+del gestore degli eventi onSubmit.

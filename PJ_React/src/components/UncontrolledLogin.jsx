@@ -2,28 +2,16 @@ function UncontrolledLogin() {
     const handleLogin = (event) => {
         event.preventDefault();
 
-        const formData = new FormData(event.target);
-        const username = formData.get('username');
-        const password = formData.get('password');
-        const isChecked = event.target.checkBox.checked;
+        const form = event.target;
+        const formData = new FormData(form)
 
-        const userData = {
-            username,
-            password,
-            isChecked,
-        }
-
-        console.log(userData);
+        formData.forEach((value, key) => {
+            console.log(`${key} : ${value}`);
+        });
     }
 
     const handleReset = (event) => {
         event.preventDefault();
-
-        const formData = new FormData(event.target);
-        const username = formData.get('username');
-        const password = formData.get('password');
-        const isChecked = event.target.checkBox.checked;
-
 
         const form = event.target;
 
@@ -37,14 +25,6 @@ function UncontrolledLogin() {
                 }
             }
         }
-
-        const userData = {
-            username,
-            password,
-            isChecked
-        }
-
-        console.log(userData)
     }
 
     return (

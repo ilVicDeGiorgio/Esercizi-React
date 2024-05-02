@@ -1,4 +1,4 @@
-import Message from "./assets/Message"
+import Message from "./Message"
 
 export function Hello() {
     return (

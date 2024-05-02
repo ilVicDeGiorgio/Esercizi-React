@@ -7,19 +7,15 @@
 // import Clock from "./Clock"
 // import MouseClicker from "./MouseClicker"
 // import InteractiveWelcome from "./InteractiveWelcome"
-import Login from "./Login"
+// import Login from "./Login"
+// import Title from "./Title"
+import UncontrolledLogin from "./components/UncontrolledLogin"
 
 function App() {
 
-  function onLogin() {
-    console.log(username, password)
-  }
-
-
-
   return (
     <>
-      <Login onLogin={onLogin}></Login>
+      <UncontrolledLogin></UncontrolledLogin>
     </>
   )
 }

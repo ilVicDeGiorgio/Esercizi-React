@@ -11,15 +11,9 @@ import Login from "./Login"
 
 function App() {
 
-  function onLogin() {
-    console.log(username, password)
-  }
-
-
-
   return (
     <>
-      <Login onLogin={onLogin}></Login>
+      <Login></Login>
     </>
   )
 }

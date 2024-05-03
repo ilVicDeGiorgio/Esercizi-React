@@ -18,6 +18,9 @@ function Login() {
     }
 
     const handleLogin = (event) => {
+        // Come si previene il comportamento predefinito dell'elemento form? 
+        // Con event.preventDefault preveniamo il comportamento predefinito del form 
+        // che di default andrebbe a ricaricare la pagina.
         event.preventDefault()
 
         const userData = {
@@ -27,12 +30,6 @@ function Login() {
         }
 
         console.log(userData)
-    }
-
-    const handleReset = () => {
-        setUsername('')
-        setPassword('')
-        setIsChecked(false)
     }
 
     const isDisabled = username === '' || password === '';
@@ -50,7 +47,6 @@ function Login() {
                 <input type="checkbox" name='checkBox' onChange={handleCheckbox} />
 
                 <button type="submit" disabled={isDisabled}>Login</button>
-                <button onClick={handleReset}>Reset</button>
             </form>
         </div >
     )

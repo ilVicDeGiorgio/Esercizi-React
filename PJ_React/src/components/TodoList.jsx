@@ -21,6 +21,12 @@ function TodoList() {
         setTodos([]);
     }
 
+    const handleRemoveTodo = (index) => {
+        const newTodos = [...todos];
+        newTodos.splice(index, 1);
+        setTodos(newTodos);
+    };
+
     return (
         <div>
             <h2>Lista dei Todo</h2>
@@ -31,7 +37,7 @@ function TodoList() {
             <button onClick={handleReset}>Reset</button>
             <ul>
                 {todos.map((todo, index) => (
-                    <li key={index}>{todo}</li>
+                    <li key={index}>{todo} <button onClick={handleRemoveTodo}>Rimuovi</button></li>
                 ))}
             </ul>
         </div>

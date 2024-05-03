@@ -1,0 +1,9 @@
+Crea un componente TodoList che renderizza un tag ul con un tag li per ogni elemento contenuto 
+nella variabile di stato todos.
+
+La variabile di stato todos dovrebbe essere un array di stringhe.
+
+Il componente TodoList dovrebbe anche contenere un tag input e un pulsante.
+
+Quando viene cliccato il pulsante, l'event handler dovrebbe aggiungere il valore del tag 
+input all'array todos."

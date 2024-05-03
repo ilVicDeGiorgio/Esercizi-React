@@ -1,0 +1,4 @@
+Creiamo un componente chiamato Color che riceva un oggetto chiamato 'color' come prop, il quale avrà 
+due proprietà, 'id' e 'name', e restituisca un tag 'li' che mostri la proprietà 'name'. 
+Creiamo un secondo componente chiamato Colors, che prenda come prop un array di oggetti, 
+dove le proprietà sono sempre 'name' e 'id', e mostri una lista non ordinata dei componenti Color.

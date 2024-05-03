@@ -1,19 +1,16 @@
-// import { useState } from 'react'
-// import Hello from './Hello'
-// import Message from './assets/Message'
-// import Welcome from './Welcome'
-// import Age from "./Age"
-// import Counter from "./Counter"
-// import Clock from "./Clock"
-// import MouseClicker from "./MouseClicker"
-// import InteractiveWelcome from "./InteractiveWelcome"
-import Login from "./Login"
+import Colors from "./components/Colors"
 
 function App() {
+  const colorsArray = [
+    { id: 1, name: 'Rosso' },
+    { id: 2, name: 'Verde' },
+    { id: 3, name: 'Blu' }
+  ];
 
   return (
     <>
-      <Login></Login>
+      <h1>Lista colors</h1>
+      <Colors colors={colorsArray}></Colors>
     </>
   )
 }

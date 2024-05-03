@@ -3,7 +3,7 @@
 // import Message from './assets/Message'
 // import Welcome from './Welcome'
 // import Age from "./Age"
-// import Counter from "./Counter"
+import Counter from "./components/Counter"
 // import Clock from "./Clock"
 // import MouseClicker from "./MouseClicker"
 // import InteractiveWelcome from "./InteractiveWelcome"
@@ -11,13 +11,13 @@
 // import Title from "./Title"
 // import UncontrolledLogin from "./components/UncontrolledLogin"
 // import FocusableInput from "./components/FocusableInput"
-import Mounted from "./components/Mounted"
+// import Mounted from "./components/Mounted"
 
 function App() {
 
   return (
     <>
-      <Mounted></Mounted>
+      <Counter initialValue={0} incrementValue={1}></Counter>
     </>
   )
 }

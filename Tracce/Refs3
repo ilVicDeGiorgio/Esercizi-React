@@ -1,0 +1,5 @@
+Modifica il componente Counter in modo che ogni volta che il valore del contatore cambia, il valore 
+di una ref venga aggiornato per contenere la direzione del cambiamento (cioè "su" o "giù") 
+rispetto alla prop initialValue.
+
+Stampa il valore della ref sulla console solo quando è diverso dal valore precedente.

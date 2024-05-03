@@ -1,34 +1,42 @@
-import { useState, useEffect } from 'react'
-import CounterDisplay from './CounterDisplay'
+import { useState, useEffect, useRef } from 'react';
 
 function Counter({ initialValue, incrementValue }) {
-
-    const [counter, setCounter] = useState(initialValue)
+    const [counter, setCounter] = useState(initialValue);
+    const countRef = useRef(initialValue);
+    const directionRef = useRef('');
 
     useEffect(() => {
-        console.log(`Il valore del contatore ora è: ${counter}`)
-    }, [counter])
+        if (counter !== initialValue) {
+            if (counter > countRef.current) {
+                directionRef.current = 'su';
+            } else if (counter < countRef.current) {
+                directionRef.current = 'giù';
+            }
+            console.log(`Il contatore è cambiato ${directionRef.current}`);
+        }
+        countRef.current = counter;
+    }, [counter, initialValue]);
 
     const handleClickAdd = () => {
-        setCounter(counter + incrementValue)
-    }
+        setCounter(counter + incrementValue);
+    };
 
     const handleClickRemove = () => {
-        setCounter(counter - incrementValue)
-    }
+        setCounter(counter - incrementValue);
+    };
 
     const handleClickReset = () => {
-        setCounter(initialValue)
-    }
+        setCounter(initialValue);
+    };
 
     return (
         <>
-            <CounterDisplay counter={counter}></CounterDisplay>
-            <button onClick={handleClickAdd}>Aggiungi 1 unità</button>
-            <button onClick={handleClickRemove}>Rimuovi 1 unità</button>
+            <h1>Contatore: {counter}</h1>
+            <button onClick={handleClickAdd}>Aggiungi {incrementValue} unità</button>
+            <button onClick={handleClickRemove}>Rimuovi {incrementValue} unità</button>
             <button onClick={handleClickReset}>Reset al valore iniziale</button>
         </>
-    )
+    );
 }
 
-export default Counter
+export default Counter;

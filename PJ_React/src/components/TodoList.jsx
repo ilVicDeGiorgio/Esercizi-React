@@ -17,11 +17,18 @@ function TodoList() {
         setInputValue(e.target.value)
     }
 
+    function handleReset() {
+        setTodos([]);
+    }
+
     return (
         <div>
             <h2>Lista dei Todo</h2>
             <input type="text" onChange={handleChange} />
+            <br />
             <button onClick={handleAddTodo}>Aggiungi</button>
+            <br />
+            <button onClick={handleReset}>Reset</button>
             <ul>
                 {todos.map((todo, index) => (
                     <li key={index}>{todo}</li>

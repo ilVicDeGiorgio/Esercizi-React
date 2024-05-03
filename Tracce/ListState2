@@ -1,0 +1,4 @@
+Modifica il componente TodoList in modo che l'input venga cancellato ogni volta che viene aggiunto un 
+Todo all'array dei todos. 
+
+Aggiungi un pulsante "reset" che cancella l'array dei todos quando viene cliccato."

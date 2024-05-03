@@ -29,12 +29,6 @@ function Login() {
         console.log(userData)
     }
 
-    const handleReset = () => {
-        setUsername('')
-        setPassword('')
-        setIsChecked(false)
-    }
-
     const isDisabled = username === '' || password === '';
 
     return (
@@ -50,7 +44,6 @@ function Login() {
                 <input type="checkbox" name='checkBox' onChange={handleCheckbox} />
 
                 <button disabled={isDisabled}>Login</button>
-                <button onClick={handleReset}>Reset</button>
             </form>
         </div>
     )

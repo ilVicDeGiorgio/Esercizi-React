@@ -1,10 +1,10 @@
-import Welcome from "./components/Welcome"
+import Clock from "./components/Clock"
 
 function App() {
 
   return (
     <>
-      <Welcome></Welcome>
+      <Clock></Clock>
     </>
   )
 }

@@ -1,0 +1,2 @@
+Modifica il componente TodoList aggiungendo un pulsante "rimuovi" a ciascun tag li.
+Quando viene cliccato, l'event handler dovrebbe rimuovere l'elemento corrispondente dall'array dei todos."

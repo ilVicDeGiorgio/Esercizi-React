@@ -1,0 +1,3 @@
+Crea un file index.css e importalo all'interno del file index.jsx. 
+Aggiungi una classe .welcome al componente Welcome che imposti il suo colore di sfondo 
+e aggiunga un bordo."

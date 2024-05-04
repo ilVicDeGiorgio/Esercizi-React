@@ -1,10 +1,10 @@
-import TodoList from "./components/TodoList";
+import Welcome from "./components/Welcome"
 
 function App() {
 
   return (
     <>
-      <TodoList></TodoList>
+      <Welcome></Welcome>
     </>
   )
 }

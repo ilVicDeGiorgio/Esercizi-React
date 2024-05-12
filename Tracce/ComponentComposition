@@ -1,0 +1,6 @@
+Creare un componente Container che renderizza i suoi figli all'interno di un tag div. 
+Fare in modo che il tag div utilizzi uno sfondo bianco e un bordo rosso. 
+Aggiungere una prop title che conterrà il valore del titolo da visualizzare prima dei figli. 
+Rendere il container espandibile/contrattile, in modo che quando viene cliccato il titolo, 
+i figli siano nascosti o mostrati di nuovo. 
+Utilizzare il hook useState per tenere traccia dello stato di contrazione.

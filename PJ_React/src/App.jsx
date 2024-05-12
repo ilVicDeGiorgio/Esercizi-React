@@ -2,6 +2,7 @@ import Container from "./components/Container";
 import Clock from "./components/Clock";
 import LanguageContext from "./LenguageContext";
 import { useState } from "react";
+import GitHubUser from "./components/GitHubUser";
 
 function App() {
   const [collapse, setCollapse] = useState(false);
@@ -51,6 +52,7 @@ function App() {
           </div>
         )}
       </LanguageContext.Provider>
+      <GitHubUser username={"ilVicDeGiorgio"}></GitHubUser>
     </Container>
   );
 }

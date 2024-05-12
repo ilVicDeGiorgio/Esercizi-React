@@ -1,0 +1,5 @@
+Crea un LanguageContext e avvolgi il componente Clock all'interno del suo provider.
+Aggiungi un tag select al componente in cui viene renderizzato il componente Clock che 
+consente all'utente di selezionare la lingua e passala come valore al Provider.
+Consuma il LanguageContext all'interno del componente Clock utilizzando il hook useContext 
+e mostra il messaggio "ora attuale" nella lingua corretta.

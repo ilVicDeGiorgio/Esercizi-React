@@ -1,9 +1,11 @@
 import { useState } from "react";
+import UseCustomHook from "./UseCustomHook"; // Importiamo il custom hook
 import GitHubUser from "./GitHubUser";
 
 function GHT2() {
   const [searchQuery, setSearchQuery] = useState("");
   const [users, setUsers] = useState([]);
+  const { userData, loading, error } = UseCustomHook(searchQuery); // Usiamo il custom hook
 
   const handleSearchChange = (e) => {
     setSearchQuery(e.target.value);
@@ -11,19 +13,7 @@ function GHT2() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    try {
-      const response = await fetch(
-        `https://api.github.com/search/users?q=${searchQuery}`
-      );
-      if (!response.ok) {
-        throw new Error("Network response was not ok");
-      }
-      const data = await response.json();
-      setUsers(data.items);
-    } catch (error) {
-      console.error("Error searching for users:", error);
-    }
+    // Non è più necessario gestire la logica di ricerca qui
   };
 
   return (
@@ -38,12 +28,11 @@ function GHT2() {
         <button type="submit">Search</button>
       </form>
       <ul>
-        {users.map((user) => (
-          <li key={user.id}>
-            {/* Passa l'username dell'utente al componente GitHubUser */}
-            <GitHubUser username={user.login} />
-          </li>
-        ))}
+        {/* Non abbiamo più bisogno della mappatura qui */}
+        {/* GitHubUser si prenderà cura del recupero dei dati e della resa */}
+        <li>
+          <GitHubUser username={searchQuery} />
+        </li>
       </ul>
     </div>
   );

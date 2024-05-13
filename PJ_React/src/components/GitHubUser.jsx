@@ -1,34 +1,25 @@
-import { useState, useEffect } from "react";
+import UseCustomHook from "./UseCustomHook";
 
 function GithubUser({ username }) {
-  const [user, setUser] = useState(null);
+  const { userData, loading, error } = UseCustomHook(username); // Utilizza il custom hook per recuperare i dati
 
-  useEffect(() => {
-    const fetchUserData = async () => {
-      try {
-        const response = await fetch(
-          `https://api.github.com/users/${username}`
-        );
-        const data = await response.json();
-        setUser(data);
-        console.log(data);
-      } catch (error) {
-        console.error("Error fetching user data:", error);
-      }
-    };
-
-    fetchUserData();
-  }, [username]);
-
-  if (!user) {
+  if (loading) {
     return <div>Loading...</div>;
+  }
+
+  if (error) {
+    return <div>Error: {error}</div>;
+  }
+
+  if (!userData) {
+    return null;
   }
 
   return (
     <div>
-      <h2>Name: {user.name}</h2>
-      <p>Login: {user.login}</p>
-      <img src={user.avatar_url} alt="User Avatar" />
+      <h2>Name: {userData.name}</h2>
+      <p>Login: {userData.login}</p>
+      <img src={userData.avatar_url} alt="User Avatar" />
     </div>
   );
 }

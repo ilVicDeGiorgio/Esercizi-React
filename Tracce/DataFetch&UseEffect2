@@ -1,0 +1,6 @@
+Ecco la traduzione della tua richiesta:
+
+"A partire dall'esercizio precedente, crea un nuovo componente GithubUsers che ha un modulo con un campo di input di testo e un pulsante di invio.
+L'input verrà utilizzato per cercare un utente fornendo il loro nome utente.
+Ogni utente sarà visualizzato in un elenco, dove ciascun elemento dell'elenco è un componente GithubUser.
+Questi componenti prenderanno username come prop."

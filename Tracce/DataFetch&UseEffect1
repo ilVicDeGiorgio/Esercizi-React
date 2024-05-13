@@ -1,0 +1,2 @@
+Crea un componente GithubUser che riceve una prop username e recupera i dati dell'utente corrispondente su Github dall'API di Github.
+Il componente dovrebbe renderizzare il nome, il login e l'avatar dell'utente.

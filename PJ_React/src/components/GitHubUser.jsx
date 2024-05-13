@@ -11,6 +11,7 @@ function GithubUser({ username }) {
         );
         const data = await response.json();
         setUser(data);
+        console.log(data);
       } catch (error) {
         console.error("Error fetching user data:", error);
       }

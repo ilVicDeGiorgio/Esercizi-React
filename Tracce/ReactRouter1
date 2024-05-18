@@ -1,0 +1,4 @@
+Crea un nuovo branch partendo dal primo esercizio sui props.
+Modifica il componente App in modo che racchiuda un componente Routes 
+e aggiungi una singola Route al percorso / che renderizza il componente Welcome,
+passando una prop name. Renderizza il componente App all'interno di un componente BrowserRouter.

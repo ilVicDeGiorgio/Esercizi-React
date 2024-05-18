@@ -1,13 +1,15 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Welcome from "./components/Welcome";
-import Counter from "./components/Counter";
-
+import ShowGithubUser from "./components/ShowGithubUser";
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Welcome name="Vittorio" />} />
-        <Route path="/Counter" element={<Counter />} />
+        <Route
+          path="/user"
+          element={<ShowGithubUser username={"ilVicDeGiorgio"} />}
+        />
       </Routes>
     </Router>
   );

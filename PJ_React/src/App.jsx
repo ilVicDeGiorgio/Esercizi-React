@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Welcome from "./components/Welcome";
 import ShowGithubUser from "./components/ShowGithubUser";
 import Counter from "./components/Counter";
+import NotFound from "./components/NotFound";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           element={<ShowGithubUser username={"ilVicDeGiorgio"} />}
         />
         <Route path="/Counter" element={<Counter />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
 
       <Link to="/counter">

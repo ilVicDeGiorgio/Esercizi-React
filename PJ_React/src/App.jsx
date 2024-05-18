@@ -5,6 +5,7 @@ import ShowGithubUser from "./components/ShowGithubUser";
 import Counter from "./components/Counter";
 import NotFound from "./components/NotFound";
 import GithubUserList from "./components/GithubUserList";
+import AddUserMessage from "./components/AddUserMessage";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="*" element={<NotFound />} />
         <Route path="/users" element={<GithubUserList />}>
           {/* Aggiungi una nuova route nidificata per il componente ShowGithubUser */}
+          <Route index element={<AddUserMessage />} />
           <Route path=":username" element={<ShowGithubUser />} />
         </Route>
       </Routes>

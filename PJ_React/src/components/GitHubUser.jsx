@@ -1,6 +1,7 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
+import PropTypes from "prop-types";
 
-function GithubUser({ username }) {
+function GitHubUser({ username }) {
   const [user, setUser] = useState(null);
 
   useEffect(() => {
@@ -33,4 +34,8 @@ function GithubUser({ username }) {
   );
 }
 
-export default GithubUser;
+GitHubUser.propTypes = {
+  username: PropTypes.string.isRequired,
+};
+
+export default GitHubUser;
